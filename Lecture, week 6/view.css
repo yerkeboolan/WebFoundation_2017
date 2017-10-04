@@ -1,0 +1,16 @@
+input: before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    border-right: 2px solid green;
+    width: 10px;
+    height: 20px;
+    transform.rotate(45deg);
+}
+
+:disabled
+:valid
+
+
+selector .class1 + .class2

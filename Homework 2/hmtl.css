@@ -1,0 +1,12 @@
+#spacebetween {
+    margin-left: 100px;
+    color: purple;
+}
+
+#main  {
+    
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
