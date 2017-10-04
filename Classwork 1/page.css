@@ -1,0 +1,28 @@
+
+
+
+#lime {
+    color: blue;    
+}  
+
+
+#hcenter {
+    margin-top: 150px;
+    margin-left: 450px;
+}
+
+
+#name {
+    margin-top: 10px;
+    margin-right: 450px;    
+}
+
+#move {
+    display: flex;
+    flex-grow: 5;
+    margin-top: 20px;
+}
+
+#wrote {
+    margin-left: 180px;
+}
