@@ -1,0 +1,47 @@
+                    3D Objects 
+
+
+
+
+tranform: rotate 3d(x, y, z, deg) 
+
+
+transfor_origin: gx;
+
+tranform_style: preserve_3d;
+
+transform: perspective(100px);
+
+
+                Animation 
+cube
+top: 0;
+left: 0;
+
+
+//hover
+top: 0;
+left: 100%;
+
+transition: left 300 ms;        transition-duration, transition-function;
+ 
+
+ 
+animation: AName 300 ms ease infinite;
+
+
+@keyframes AName {
+    0% { top: 0;
+    left: 0; }
+    50% { left: 100%; }
+    100% { left: 0; }
+}
+
+
+
+Верстку, табличные, анимации, 3D объекты.
+
+теги.. 
+
+
+
