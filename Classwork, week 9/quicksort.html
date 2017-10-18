@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h1>This is Quick Sort</h1>
+	<script>
+		function quick_sort(MyArray) {
+
+			if(MyArray.length <= 1) {
+				return MyArray;
+			}
+			else {
+				var left = [];
+				var right = [];
+				var newArray = [];
+				var pivot = MyArray.pop();
+				var length = MyArray.length;
+
+				for(var i = 0; i < length; i++) {
+					if(MyArray[i] <= pivot) {
+						left.push(MyArray[i]);
+					}  	else {
+						right.push(MyArray[i]);
+					}
+				}
+
+				return newArray.concat(quick_sort(left), pivot, quick_sort(right));
+			}
+		}
+
+		var MyArray = [3, 0, 2, 5, -1, 4, 1];
+		var sortedArray = quick_sort(MyArray);
+
+		alert(sortedArray);
+
+	</script>
+
+
+</body>
+</html>
