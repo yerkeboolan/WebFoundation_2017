@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Fibonacci numbers</h1>
+
+
+<script>
+function fibo(number){
+  var x = 1;
+  var y = 0; 
+  var temp;
+
+  while (number >= 0){
+    temp = x;
+    x = x + y;
+    y = temp;
+    number--;
+  }
+
+  return y;
+}
+	alert(fibo(7));
+</script>
+
+</body>
+</html>
