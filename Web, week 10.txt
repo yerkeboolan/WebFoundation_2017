@@ -1,0 +1,65 @@
+var title = "asd"
+
+	function() {
+		var title = "qwe";
+		console.log(title);
+	}
+
+	f() {
+		console.log(title);
+	}
+
+
+
+for(var i = 0; i < 10; i++) {
+	function(index);
+	setTimeout(function() {
+	console.log(i, e[i]);
+	}, 300);
+}
+
+
+
+function database() {
+	var title = "default";
+var setTitle = function(newTitle) {
+	title = newTitle;
+}
+
+var getTitle = function() {					Замыкание
+	return title;
+}
+
+
+return {
+	setTitle: setTitle;
+	getTitle: getTitle;
+
+var d = database();
+d.setvalue("qwe");
+console.log(d.getvalue());
+
+
+var a = new Date();
+
+var a  = Date();
+var b = new a();
+
+function Person()  {
+	var self = this;
+	this.name = " ";
+	this.age = 1;
+	this.setName = function(name) {
+	self.name = name;
+	}
+	p.setName("Vasya"); }
+	console.log(p.name);
+}
+
+
+Person.prototype = {
+	name: "default";
+	age: 0;
+	setName: function() {
+		this.name = name;
+	}

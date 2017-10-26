@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click Action</title>
+	<style>
+		#div{
+			width: 15%;
+			height:auto;
+			border: 1px solid black;
+		}
+
+		div {
+			border: 1px solid black;
+			width:auto;
+			height: auto;
+		} 
+	</style>
+</head>
+
+	<body>
+	<p>Try to Click it</p>
+	<button onclick="clickFunction()">Click it!</button>
+
+	<input type = "text" id = "myText" value = "">
+	<div id = "div"></div>
+
+	<script>
+
+		function clickFunction() {
+			var text = document.getElementById("myText").value;
+			var newDiv = document.createElement("div");
+			if(text == "") text = "NULL";
+			
+			var willwrite = document.createTextNode(text);
+			newDiv.appendChild(willwrite);
+			document.getElementById("div").appendChild(newDiv);
+
+		}
+
+	</script>
+
+
+
+</body>
+</html>
