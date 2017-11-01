@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<style> 
+		button{
+			position: relative;
+			background-color: white;
+			color: purple
+			
+			width:40px;
+			padding:5px;
+			margin-top: 10px;
+		}
+		input{
+			position:relative;
+			width:150px;
+		}
+	</style>
+</head>
+<body>
+<div id="div">
+</div>
+	<script type="text/javascript">
+
+		function calculation() {
+			this.createPage  = function() {
+
+			var enter = document.createElement("input");
+
+				document.getElementById("div").appendChild(enter);
+				var button0=document.createElement("button");
+				var num0 = document.createTextNode("0");
+				button0.appendChild(num0);
+				document.getElementById("div").appendChild(button0);
+				button0.onclick=function(){
+					enter.value+="0";
+				}
+
+				
+				var button1 =document.createElement("button");
+				var num1 = document.createTextNode("1");
+				button1.appendChild(num1);
+				document.getElementById("div").appendChild(button1);
+				button1.onclick=function(){
+					
+					enter.value+="1";
+				}
+				
+				var button2 =document.createElement("button");
+				var num2 = document.createTextNode("2");
+				button2.appendChild(num2);
+				document.getElementById("div").appendChild(button2);
+				button2.onclick=function(){
+					enter.value+="2";
+				}
+
+				var button3=document.createElement("button");
+				var num3 = document.createTextNode("3");
+				button3.appendChild(num3);
+				document.getElementById("div").appendChild(button3);
+				button3.onclick=function(){
+					enter.value+="3";
+				}
+				var button4=document.createElement("button");
+				var num4 = document.createTextNode("4");
+				button4.appendChild(num4);
+				document.getElementById("div").appendChild(button4);
+				button4.onclick=function(){
+					enter.value+="4";
+				}
+				var button5=document.createElement("button");
+				var num5 = document.createTextNode("5");
+				button5.appendChild(num5);
+				document.getElementById("div").appendChild(button5);
+				button5.onclick=function(){
+					enter.value+="5";
+				}
+				var button6=document.createElement("button");
+				var num6 = document.createTextNode("6");
+				button6.appendChild(num6);
+				document.getElementById("div").appendChild(button6);
+				button6.onclick=function(){
+
+					enter.value+="6";
+				}
+
+				var button7=document.createElement("button");
+				var num7 = document.createTextNode("7");
+				button7.appendChild(num7);
+				document.getElementById("div").appendChild(button7);
+				button7.onclick=function(){
+					enter.value+="7";
+				}
+				var button8=document.createElement("button");
+				var num8 = document.createTextNode("8");
+				button8.appendChild(num8);
+				document.getElementById("div").appendChild(button8);
+				button8.onclick=function(){
+					enter.value+="8";
+				}
+				var button9=document.createElement("button");
+				var num9 = document.createTextNode("9");
+				button9.appendChild(num9);
+				document.getElementById("div").appendChild(button9);
+				button9.onclick=function(){
+					enter.value+="9";
+				}
+
+				var btnplus=document.createElement("button");
+				var tplus = document.createTextNode("+");
+				btnplus.appendChild(tplus);
+				document.getElementById("div").appendChild(btnplus);
+				var plus=false;
+				btnplus.onclick=function(){
+					plus=true;
+					enter.value+="+";
+				}
+
+				var btnmin=document.createElement("button");
+				var tmin = document.createTextNode("-");
+				btnmin.appendChild(tmin);
+				document.getElementById("div").appendChild(btnmin);
+				var minus=false;
+				btnmin.onclick=function(){
+					minus=true;
+					enter.value+="-";
+				}
+				var btndiv=document.createElement("button");
+				var tdiv = document.createTextNode("?");
+				btndiv.appendChild(tdiv);
+				document.getElementById("div").appendChild(btndiv);
+				var divide=false;
+				btndiv.onclick=function(){
+					divide=true;
+					enter.value+="?";
+				}
+				var btnmult=document.createElement("button");
+				var tmult = document.createTextNode("x");
+				btnmult.appendChild(tmult);
+				document.getElementById("div").appendChild(btnmult);
+				var mult=false;
+				btnmult.onclick=function(){
+					mult=true;
+					enter.value+="x";
+				}
+				var btnc=document.createElement("button");
+				var tc = document.createTextNode("C");
+				btnc.appendChild(tc);
+				document.getElementById("div").appendChild(btnc);
+				
+				btnc.onclick=function(){
+					
+					enter.value="";
+				}
+				var btneq=document.createElement("button");
+				var teq = document.createTextNode("=");
+				btneq.appendChild(teq);
+				document.getElementById("div").appendChild(btneq);
+				btneq.onclick=function(){
+					
+					var input=enter.value;
+					if(plus==true){
+						var a=input.split("+");
+						enter.value=parseInt(a[0])+parseInt(a[1]);
+					}
+					else if(mult==true){
+						var a=input.split("x");
+						var upd=parseInt(a[0])*parseInt(a[1]);
+						enter.value=upd;
+					}
+					else if(divide==true){
+						var a=input.split("?");
+						var upd=parseInt(a[0])/parseInt(a[1]);
+						enter.value=upd;
+					}
+					
+					else if(minus==true){
+						var a=input.split("-");
+						var upd=parseInt(a[0])-parseInt(a[1]);
+						enter.value=upd;
+					}
+					
+					
+					
+					
+					
+					
+				}
+				
+
+			}
+		}
+		var num1 = new calculation();
+		
+		num1.createPage()
+		
+
+	</script>
+</body>
+</html>
