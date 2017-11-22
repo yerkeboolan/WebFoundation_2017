@@ -1,0 +1,27 @@
+#mycalc
+{
+   
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#boxer
+{
+    width: 180px;
+    margin-top:20px;
+}
+button
+{
+    width: 45px;
+    height: 45px;
+    margin: 3px;
+    background-color:lightgreen;
+    color:purple;
+  
+
+}
+button:disabled{
+    background-color: gray;
+    color:black;
+}
