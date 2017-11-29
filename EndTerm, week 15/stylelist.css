@@ -1,0 +1,43 @@
+.button {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Georgia;
+    font: initial;
+    width: 200px;
+    height: 65px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: darkblue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropcont {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    border-color: darkblue: 
+    z-index: 1;
+}
+
+.dropcont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: cursive;
+    display: block;
+}
+
+.dropdown a:hover {background-color: lightblue}
+
+.show {display:block;}

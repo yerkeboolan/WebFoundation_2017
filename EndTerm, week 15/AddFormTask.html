@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Form List</title>
+    <link rel="stylesheet" href="stylelist.css">
+</head>
+<body>
+<div class="dropdown">
+<button onclick="myFunction()" class="button">Select input type</button>
+  <div id="Dropdown" class="dropcont">
+    <a href="#home" id = "text" onclick="setInputName(this)">Text</a>
+    <a href="#number" id = "number" onclick="setInputName(this)">Number</a>
+    <a href="#contact" id = "date" onclick="setInputName(this)">Date</a>  
+    <a href="#about" id = "submit" onclick="setInputName(this)">Submit</a>
+    <a href="#contact" id = "radio" onclick="setInputName(this)">Radio</a>
+    <a href="#about" id = "checkbox" onclick="setInputName(this)">Checkbox</a>
+    
+    
+  </div>
+  <button class="button" onclick="addDrops()">Add</button>
+</div>
+ <div id="container"/>
+<script>
+	   var a = 1;
+        var inputName;
+
+function addDrops(){
+	       
+	        function my() {
+       			return a++;
+            } 
+            var number = a++;
+            var container = document.getElementById("container");
+            
+                container.appendChild(document.createTextNode("INPUT "));
+                var input = document.createElement("input");
+                input.type = inputName;
+
+                container.appendChild(input);
+                container.appendChild(document.createElement("br"));
+            
+        }
+
+function myFunction() {
+    document.getElementById("Dropdown").classList.toggle("show");
+}
+
+function setInputName(namee) {
+	inputName = document.getElementById(namee.id).innerHTML;
+	console.log(document.getElementById(namee.id).innerHTML);
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.button')) {
+
+    var dropdowns = document.getElementsByClassName("dropcont");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
