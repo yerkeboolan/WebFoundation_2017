@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Profile</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+
+
+<!--Navbar-->
+<nav id = "nav" class="navbar navbar-expand-lg navbar-dark indigo fixed-top scrolling-navbar">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" style = "margin-left: 8px;width:40px !important;height:40px !important;" alt="image">
+    </a>
+
+    <!-- Collapse button -->
+   
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav pull-xs-right">
+            <li class="nav-item">
+                <a class="nav-link" href="main.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="stories.html">Archieve</a>
+            </li>
+                
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+            <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img id ="profileimage" src="" class="img-fluid rounded-circle z-depth-0"></a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-purple" aria-labelledby="navbarDropdownMenuLink-5" style="position: absolute;">
+                                <a class="dropdown-item waves-effect waves-light" id = "profilename" href="profile.html"></a>
+                                <a class="dropdown-item waves-effect waves-light" href="settings.html">Settings</a>
+                                <a class="dropdown-item waves-effect waves-light" onclick = "clear()" href="signin.html">Logout</a>
+                            </div>
+                <!-- <a class="nav-link dropdown-toggle waves-effect waves-light" href="profile.html">Profile</a> -->
+            </li>
+
+
+            <!-- Dropdown -->
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li> -->
+
+        </ul>
+
+
+        <!-- Links -->
+
+        <!-- Search form -->
+      <!--   <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </form> -->
+    </div>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+
+</nav>
+
+
+
+
+
+
+
+<div id="img1" style="">
+    <div class="ptext"><span class="border"></span></div>
+
+
+
+  </div>
+
+<div class="container" id = "main">
+<div class="card">
+<div class = "container" id = "second">
+ <div class = "row">
+  <div class = "col-md-4">
+  
+  <div>
+ <img align="left" style = "width:100%; padding: 10px;" id = "userimage" class="fb-image-profile thumbnail img-fluid"  alt="Profile image example"/ >
+
+
+</div>
+
+</div>
+
+<div class = "col-md-8 " id = "information">
+ <div id = "contact">
+  <div id="headInfo">
+  
+  <h4>Holiday comes to us...</h4>
+    </div>
+     <table  id = "dataTable" class="myaccount-table table table-hover " >
+         <tbody id = "table" style="border-collapse: separate;">
+          <tr>
+            <td class="myaccount-td-bold">Мой город</td>
+            <td class="myaccont-td-data"> Алматы</td>
+          </tr>
+          <tr>
+            <td class="myaccount-td-bold">Email</td>
+            <td class="myaccont-td-data">yerkebulanxyz@gmail.com</td>
+          </tr>
+          <tr>
+            <td class="myaccount-td-bold">Любимый жанр</td>
+            <td class="myaccont-td-data" id = "myWriters"></td>
+          </tr>
+            <tr>
+            <td class="myaccount-td-bold">Любимые книги</td>
+            <td class="myaccont-td-data" id = "myBooks"></td>
+          </tr>
+          <tr>
+            <td class="myaccount-td-bold">Дата регистрации</td>
+            <td class="myaccont-td-data">20.01.2011</td>
+          </tr>
+        </tbody>
+      </table>
+
+     
+    </div>
+
+
+
+</div>
+</div>
+
+
+<div class="container" id = "infotabs">
+<ul class="nav md-pills nav-justified pills-secondary">
+    
+    <li class="nav-item">
+        <a class="nav-link btn btn-default" data-toggle="tab" href="#panel11" role="tab">О себе</a>
+    </li>
+    <li class="nav-item">
+
+
+        <a class="nav-link btn btn-default" data-toggle="tab" href="#panel12" role="tab">Подписчики</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link btn btn-default" data-toggle="tab" href="#panel13" role="tab">Посты</a>
+    </li>
+</ul>
+
+<!-- Tab panels -->
+<div class="tab-content" style="padding: 10px">
+
+    <!--Panel 1-->
+    <div class="tab-pane fade in show active" id="panel11" role="tabpanel">
+        <br>
+
+        <p>ʜᴀᴠᴇ ʏᴏᴜ ᴍᴇᴛ ᴍᴇ? 😏 Almaty, Qazaqstan. 🇰🇿 Student of KBTU\FIT\IS. 👨🏻‍💻 ➖➖➖➖➖➖➖➖➖➖➖➖ Telegram, VK, FB: @yerkebulanxyz 👇👇👇👇👇👇 www.medicar.xyz</p>
+
+    </div>
+    <!--/.Panel 1-->
+
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel12" role="tabpanel">
+        <br>
+
+        <p>arsen.sagyndyk
+arsen.sagyndyk
+Follow
+
+oralova_
+Aray 🖤
+Follow
+
+stanooov
+Абылайхан
+Following
+
+artem_ledyayev
+Артем Ледяев
+Follow
+
+micr0.naushnik
+Микро Наушники
+Follow
+
+tokenmarket_official
+КРИПТОВАЛЮТА БЛОКЧЕЙН
+Follow
+
+raskrutka247
+Продвижение вашего бизнеса
+Follow
+
+bekzzat_b
+Бешімов Бекзат
+Following
+
+sanzhik_seitzhan
+Sanzhar Seitzhan
+Following
+
+kundyzbekov_
+Following
+
+yeldan_s
+Yeldan Samarkhan
+Following
+
+elen_palch
+Елена Владимировна
+Follow
+
+svyv_
+Saya Bedelbekova KZ- ALA❤️
+Following
+
+sneakerclean.kz
+sneaker clean almaty
+Follow
+
+manikjur_almaty_14
+Маникюр Алматы
+Follow
+
+tolkushaaa
+Толкын
+Following
+
+asset_st
+Asset Sarsenov
+Following
+
+batyrmusic
+Батырхан Измаганбетов
+Follow
+
+qz362
+Follow
+
+rebel.flowers_
+Цветы Астана
+Follow
+
+video_kpm
+🤠КазаХ ПозитиВ в МозгаХ🤠
+Follow
+
+_dariguwa_
+простая девочка
+Following
+
+3tonarecords
+СТУДИЯ ЗВУКОЗАПИСИ 3ONARECORDS
+Follow
+
+bota_kbtuvoice
+Акбота Нурданкызы
+Following
+
+intoxicated_iam
+Porquoi ?
+Following
+
+ninjas_chicken
+Rinat Sabitov
+Following
+
+yedilbayev98
+Abeke
+</p>
+
+    </div>
+    <!--/.Panel 2-->
+
+    <!--Panel 3-->
+    <div class="tab-pane fade" id="panel13" role="tabpanel">
+        <br>
+
+        <p> </p>
+
+    </div>
+    <!--/.Panel 3-->
+
+    <!--Panel 4-->
+    <div class="tab-pane fade" id="panel14" role="tabpanel">
+        <br>
+
+        <p> </p>
+
+    </div>
+    <!--/.Panel 4-->
+
+</div>
+</div>
+</div>
+
+
+<div style = " width:100%;height:100px; margin-top:1%; background:#F9423A;"> 
+  <div class="bottome" id = "bottome">
+         <a href="https://facebook.com/yerkebulanxyz" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/yerkebulanxyz" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/yerkebulanxyz" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCm-G6u-IERVZLHmMscQRa3Q?view_as=subscriber" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/yerkebulanxyz" class = "fa fa-instagram"></a>
+
+    </div>
+    </div>
+
+</div>
+
+</div>
+
+
+
+<footer id = "footer" class="container-fluid" style = "margin-top: 10%">
+<div class="container" id = "footer">
+
+    <div class="footerlogo">
+
+   <a href="/">
+      
+   </a>
+
+    </div>
+
+<div class="row" style="margin-top: -5%;">
+
+
+<div class="col-md-6" id = "contacts">
+       <h3>Social media</h3>
+        <a href="https://facebook.com/yerkebulanxyz" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/yerkebulanxyz" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/yerkebulanxyz" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCm-G6u-IERVZLHmMscQRa3Q?view_as=subscriber" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/yerkebulanxyz" class = "fa fa-instagram"></a>
+
+        <div class="container" id = "contactdiv" >
+        
+        <h3>Contact us</h3>
+        <div class="" id="contactinfo">
+        <div>Phone: 8(777) 444 - 40 - 49</div>
+        <div>Email: erke.zhumagali@gmail.com</div>
+        <div>Address: Almaty city, KBTU</div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="col-md-6">
+         <div class="container" id ="subscription">
+                             <form  class= "mt-5" id = "subscribe" style="width: 18rem; margin:auto; padding: 0%;">
+                                  <h3 style="text-align: center;">Subscribe</h3>
+
+                                    <div class="md-form ">
+                                        <i class="fa fa-user prefix grey-text"></i>
+                                        <input type="text" id="form3" class="form-control">
+                                        <label for="form3">Your name</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-envelope prefix grey-text"></i>
+                                        <input type="text" id="form2" class="form-control">
+                                        <label for="form2">Your email</label>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type = "button" class="btn btn-indigo">Send 
+                                            <!-- <i class="fa fa-paper-plane-o ml-1"></i> -->
+                                        </button>
+                                    </div>
+                  
+                     
+                                </form>
+            </div>
+    </div>
+       
+    
+</div>
+    </div>
+
+
+
+<div class="footer-copyright">
+        <div class="container-fluid">
+             © 2017 Qazaqstan, Almaty 050000 <a href="https://t.me/yerkebulanxyz"> Connect with me </a>
+
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////// -->
+<!-- <div>What a wonderful world</div> -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/profile.js"></script>    
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+     <script type="text/javascript" src="../js/scrollreveal.js"></script>
+      <script type="text/javascript" src="../js/main.js"></script>
+
+    <!-- <script type="text/javascript" src="../js/script.js" ></script> -->
+</body>
+
+</html>

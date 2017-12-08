@@ -1,0 +1,272 @@
+
+*{
+	transition: all 0.2s linear;
+}
+
+body, html{
+	height: 100%;	
+	font-family: Roboto !important;
+}
+
+body{
+	padding-top:3%;
+}
+
+.navbar{
+	background-color: #0000CD !important;
+}
+ 
+
+.carousel-inner{
+	height: 100%;
+}
+
+.btn-primary{
+background-color: #40E0D0 !important;
+}
+
+.btn-primary:hover{
+background-color: #B2B2B2 !important;
+
+}
+.carousel-item, img{
+    height: 100% !important;
+    width:  100% !important;
+    /*border: 1px solid red;*/
+}
+
+	
+
+#subscription{
+	margin-top:12%;
+}
+.container{
+	
+	/*justify-content: center;*/
+}
+
+.row{
+	justify-content: center;
+}
+
+.card, .poste{
+	margin-left:10%;
+	margin-right:10%;
+	 box-shadow: 1px 2px 2px 1px rgba(249,66,58,0.4) !important;
+	 transition: all .25s linear;
+	/*box-shadow: 0 2px 5px 0 rgba(249,66,58,.4), 2px 3px 11px 2px rgba(249,66,58,.4) !important;*/
+}
+
+.card:hover, .poste:hover{
+	 box-shadow: -1px 10px 29px 0px rgba(249,66,58,0.8) !important;
+	/*box-shadow: 0 2px 25px 0 rgba(249,66,58,.9), 2px 3px 21px 2px rgba(249,66,58,.9) !important;*/
+}
+
+
+
+
+
+
+.fa{
+	font-size: 2.5em;
+	margin: 19px;
+
+}
+.fa:hover{
+	color:#666 !important;
+}
+
+
+#subscribe, #contacts, .fa{
+	color:white !important;
+}
+
+#tofooter{
+	top:-50px;
+}
+.arrow {
+  position: relative;
+  bottom: 0;
+  /*top:60px;*/
+  left: 50%;
+  margin-left:-25px;
+  color: #333333 !important;
+  font-size: 40px;
+  transition: all 1s ease;
+}
+
+.arrow:hover{
+	color: #B2B2B2 !important;
+	text-decoration: none;
+}
+.bounce {
+	font-size:80px;
+	/*top:20px;*/
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+.animated{-webkit-animation-fill-mode:both;
+-moz-animation-fill-mode:both;
+-ms-animation-fill-mode:both;
+-o-animation-fill-mode:both;
+
+            animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+animation-fill-mode:both;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+/*body{
+	padding-top: 4%;
+}*/
+
+
+/*/////////////////////////////////////*/
+footer.container-fluid {
+	background-color: #262626 !important;
+}
+
+.footerlogo{
+	text-align: center;
+}
+.footerlogo a{
+background: url("../images/newlogo.png") 80% 80% no-repeat #262626;
+    border: none;
+    width: 185px ;
+    padding: 0 40px !important;
+    height: 100px !important;
+    text-decoration: none;
+    border: 0px;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.footerlogo{
+	position: relative;
+}
+.footerlogo:before{
+	content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.1);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+
+#contacts{
+	text-align: center;
+	padding: 5.8%;
+}
+
+.md-form .prefix{
+	font-size:1.4rem;
+}
+.md-form{
+	width: 90%;
+}
+
+.footer-copyright{
+	color: white !important;
+	text-align: center;
+	padding:5%;
+	padding-bottom: 2%;
+}
+
+.footer-copyright a{
+	color: #40E0D0;
+}
+.footer-copyright a:hover{
+	color: white;
+}
+
+
+#contactdiv{
+   margin-top: 10%;
+}
+
+#contactinfo{
+
+	width: 80%;
+	margin: auto;
+	margin-top:5%;
+	text-align: left;
+  }
+
+#authors{
+	padding: 5%;
+	margin-top: 0%;
+}
+
+/*.navbar-nav{
+	margin-left:70px;
+}*/
+
+img#profileimage{
+	margin-left: 5px;
+	height:30px !important; width: 30px !important;
+}
+a#navbarDropdownMenuLink-5{
+	position: relative;
+    bottom: 3px;
+}
+a#navbarDropdownMenuLink-5:after {
+    display: none;
+}
+
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #1d1e1f;
+    background-color: #40E0D0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

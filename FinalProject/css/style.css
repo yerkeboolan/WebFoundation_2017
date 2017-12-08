@@ -1,0 +1,66 @@
+/* Your custom styles */
+
+input[type=text]:focus:not([readonly])+label{
+	color:#B0E0E6 !important;
+}
+
+input[type=password]:focus:not([readonly])+label{
+
+	color:#B0E0E6 !important;
+}
+
+input[type=password]:focus:not([readonly]){
+
+	border-bottom: 1px solid #B0E0E6;
+	box-shadow: 0 1px 0 0 #B0E0E6;
+}
+input[type=text]:focus:not([readonly]){
+
+	border-bottom: 1px solid #B0E0E6;
+	box-shadow: 0 1px 0 0 #B0E0E6;
+}
+
+.btn-default, .btn-indigo{
+	background-color: #B0E0E6;
+}
+.btn-default:hover, .btn-indigo:hover{
+	background-color: #B0E0E6 !important;
+}
+
+.btn-default:active, .btn-indigo:active{
+	background-color: black !important;
+}
+
+.btn-default.active:active, .btn-indigo:active{
+	background-color: black !important;
+}
+
+.btn-default:focus, .btn-indigo:focus{
+	background-color: black !important;
+}
+
+.btn-default.active, .btn-default:active, .btn-default:focus{
+	background-color: #B0E0E6 !important;
+}
+/*/////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+body{
+	padding-top:10%;
+}
+
+ul li{
+	display: inline;
+}
+
+#profilebuttons{
+	display: inline;
+}
+
+#profilebuttons .btn{
+	padding: 1.15rem 1.13rem;
+}
+
+.fb-image-profile{
+	padding: 8px;
+}
+
+#second{
+	padding:18px;
+}
+#contact{
+	margin-top: 4px;
+	/*margin-bottom: 4px;*/
+   	 /*padding-bottom:10px;*/
+}
+
+#bottome{
+	display: flex;
+	justify-content: space-around;
+	padding:10px;
+}
+
+
+.fa:hover{
+	color:#b2b2b2 !important;
+}
+
+.btn-default.active, .btn-default:active, .btn-default:focus{
+	background-color: #F9423A !important;
+}
+
+#infotabs .btn{
+	padding: .85rem 5.13rem;
+	margin-left:0 !important;
+}
+

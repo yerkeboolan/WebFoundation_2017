@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+
+
+<!--Navbar-->
+<nav id = "nav" class="navbar navbar-expand-lg navbar-dark indigo fixed-top scrolling-navbar">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" style = "margin-left: 8px;width:40px !important;height:40px !important;" alt="image">
+    </a>
+
+    <!-- Collapse button -->
+   
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav pull-xs-right">
+            <li class="nav-item">
+                <a class="nav-link" href="main.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="stories.html">Stories</a>
+            </li>
+                
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+            <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img id ="profileimage" src="" class="img-fluid rounded-circle z-depth-0"></a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-purple" aria-labelledby="navbarDropdownMenuLink-5" style="position: absolute;">
+                                <a class="dropdown-item waves-effect waves-light" id = "profilename" href="profile.html"></a>
+                                <a class="dropdown-item waves-effect waves-light" href="settings.html">Settings</a>
+                                <a class="dropdown-item waves-effect waves-light" onclick = "clear()" href="signin.html">Logout</a>
+                            </div>
+                <!-- <a class="nav-link dropdown-toggle waves-effect waves-light" href="profile.html">Profile</a> -->
+            </li>
+
+
+            <!-- Dropdown -->
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li> -->
+
+        </ul>
+
+
+        <!-- Links -->
+
+        <!-- Search form -->
+      <!--   <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </form> -->
+    </div>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+
+</nav>
+
+
+<div class="row">
+    <div class="col-md-9 col-md-offset-4">
+        <div class="form-group">
+            <label class="col-md-6 control-label" for="fname">Город</label>
+            <div class="col-md-6">
+                <input type="text" placeholder="Город" id="fname" class="form-control" name="fname">
+            </div>
+            <label class="col-md-6 control-label" for="lName">Любимые писатели</label>
+            <div class="col-md-6">
+                <input type="text" placeholder="Любимые писатели" id="lName" class="form-control" name="lName">
+            </div>
+            <br/>
+            <br>
+            <label class="col-md-6 control-label" for="mId">Любимые книги</label>
+            <div class="col-md-6">
+                <input type="text" placeholder="Любимые книги" id="mId" class="form-control" name="mId">
+                     <button type="button" class="btn btn-default" id="save">Save</button>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+        <div class="container">
+            <table class="table table-striped" id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Город</th>
+                        <th>Любимые писатели</th>
+                        <th>Любимые книги</th>
+                        </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+    </table>
+</div></div>
+
+
+
+
+<footer id = "footer" class="container-fluid" style = "margin-top: 10%">
+<div class="container" id = "footer">
+
+    <div class="footerlogo">
+
+   <a href="/">
+      
+   </a>
+
+    </div>
+
+<div class="row" style="margin-top: -5%;">
+
+
+<div class="col-md-6" id = "contacts">
+        <h3>Social media</h3>
+        <a href="https://facebook.com/yerkebulanxyz" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/yerkebulanxyz" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/yerkebulanxyz" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCm-G6u-IERVZLHmMscQRa3Q?view_as=subscriber" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/yerkebulanxyz" class = "fa fa-instagram"></a>
+
+        <div class="container" id = "contactdiv" >
+        
+        <h3>Contact us</h3>
+        <div class="" id="contactinfo">
+        <div>Phone: 8(777) 444 - 40 - 49</div>
+        <div>Email: erke.zhumagali@gmail.com</div>
+        <div>Address: Almaty city, KBTU</div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-6">
+         <div class="container" id ="subscription">
+                             <form  class= "mt-5" id = "subscribe" style="width: 18rem; margin:auto; padding: 0%;">
+                                  <h3 style="text-align: center;">Subscribe</h3>
+
+                                    <div class="md-form ">
+                                        <i class="fa fa-user prefix grey-text"></i>
+                                        <input type="text" id="form3" class="form-control">
+                                        <label for="form3">Your name</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-envelope prefix grey-text"></i>
+                                        <input type="text" id="form2" class="form-control">
+                                        <label for="form2">Your email</label>
+                                    </div>
+
+                                    <div class="button-group text-center">
+                                        <button type = "button" class="btn btn-indigo">Send 
+                                            <!-- <i class="fa fa-paper-plane-o ml-1"></i> -->
+                                        </button>
+
+                                    </div>
+                                     
+                                        
+                     
+                                </form>
+            </div>
+    </div>
+
+       
+    
+</div>
+    </div>
+
+
+
+<div class="footer-copyright">
+        <div class="container-fluid">
+            © 2017 Qazaqstan, Almaty 050000 <a href="https://t.me/yerkebulanxyz"> Connect with me </a>
+
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////// -->
+<!-- <div>What a wonderful world</div> -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+
+    <script type="text/javascript" src="../js/profile.js"></script>    
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="../js/settings.js"></script>    
+     <script type="text/javascript" src="../js/scrollreveal.js"></script>    
+    
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+     <script type="text/javascript" src="../js/main.js" ></script>
+    <!-- <script type="text/javascript" src="../js/script.js" ></script> -->
+</body>
+
+</html>
